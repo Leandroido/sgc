@@ -1,0 +1,5 @@
+node_modules
+build
+
+# O ideal é não enviar o arquivo .env, mas para facilitar este trabalho vou mante-lo
+# .env

@@ -1,0 +1,100 @@
+{
+  // General
+  "breadcrumbs.enabled": true,
+  "files.associations": {
+    ".env.*": "dotenv"
+  },
+  "files.autoSave": "onFocusChange",
+  "json.schemaDownload.enable": true,
+  "window.commandCenter": false,
+
+  // Workbench
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.editorActionsLocation": "default",
+  "workbench.editor.labelFormat": "default",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "newUntitledFile",
+
+  // Editor
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.hideCursorInOverviewRuler": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 1.5,
+  "editor.minimap.enabled": false,
+  "editor.parameterHints.enabled": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.renderLineHighlight": "all",
+  "editor.rulers": [80, 120],
+  "editor.scrollbar.vertical": "visible",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.smoothScrolling": true,
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".env": ".env*",
+    ".env.local": ".env*",
+    "next.config.js": "next*",
+    "package.json": ".eslint*, .prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, .yarn*, yarn.lock",
+    "tailwind.config.js": "tailwind.config*, postcss.config*"
+  },
+  "explorer.sortOrder": "foldersNestsFiles",
+
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+
+  // Extensions settings
+  "cSpell.language": "en,pt-BR",
+  "git.suggestSmartCommit": false,
+  "prettier.trailingComma": "all",
+
+  // Language specific settings
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "workbench.preferredLightColorTheme": "One Dark Pro Darker"
+}

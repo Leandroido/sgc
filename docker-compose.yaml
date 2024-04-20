@@ -1,0 +1,38 @@
+services:
+  # Banco de dados que precisa para a api funcionar
+  postgresdb:
+    image: postgres:alpine
+    env_file: .env
+    environment:
+      PGUSER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      PGDATABASE: ${PGDB}
+      PGTZ: ${PGTZ}
+    ports:
+      - ${PGPORT}:${PGPORT}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - postgres-compose-network
+
+  # Studio para facilitar o manuseio do PostgreSQL
+  # Para conectar no banco, soloque o nome do serviço postgresdb
+  pgadmin:
+    image: dpage/pgadmin4
+    env_file: .env
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - ${PGADMIN_PORT}:80
+    networks:
+      - postgres-compose-network
+    depends_on:
+      - postgresdb
+
+volumes:
+  pgdata:
+
+networks:
+  postgres-compose-network:
+    driver: bridge
